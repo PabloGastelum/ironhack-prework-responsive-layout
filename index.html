@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Header content -->
+        <img src="data:image/png;base64,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"
+            alt="Logo" />
+        <nav>
+            <!-- Navigation content -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- Main content -->
+            <h1>Welcome to Meta Website</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid adipisci sapiente illo
+                accusantium? Enim molestiae accusamus dolores aspernatur deserunt hic, vitae corporis quo necessitatibus
+                ipsa ea? Iste, distinctio dolor.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptatem vitae quod nisi iure,
+                aspernatur voluptates cumque odio minus aliquid, excepturi explicabo alias blanditiis tempore harum ad
+                nostrum rem a.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus quibusdam libero quaerat
+                nostrum accusamus cumque, optio dolore ratione maiores natus minus officia labore suscipit eius. Beatae
+                quibusdam natus in?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ratione quibusdam, dolorum
+                consequatur molestiae obcaecati ad modi facilis quasi recusandae nulla inventore reprehenderit. Dolorem
+                praesentium nihil rem cumque possimus? Qui.
+                Expedita, tempora odit quas ad sequi dolore! Perferendis, officia. Saepe vel accusamus amet voluptas
+                quae voluptatibus debitis? Nam aliquid quaerat dolores! Reiciendis at voluptatem animi labore voluptates
+                vel aut veritatis.
+            </p>
+        </section>
+        <aside>
+            <!-- Sidebar content -->
+            <h3>Latest News</h3>
+            <ul>
+                <li>Introduce the Next Generation of Llama</li>
+                <li>Introducing Threads</li>
+                <li>Introducing Voicebox</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+        <section>
+            <span>Legal</span>
+            <ul>
+                <li>Privacity policy</li>
+                <li>Terms of services</li>
+                <li>Sitemap</li>
+            </ul>
+        </section>
+        <section>
+            <span>Support</span>
+            <ul>
+                <li>Privacity policy</li>
+                <li>Terms of services</li>
+                <li>Sitemap</li>
+            </ul>
+        </section>
+        <section>
+            <span>Contact: </span>
+            <div>
+                <input placeholder="Fullname">
+                <input placeholder="Email">
+                <div>
+                    <textarea name="" id="" cols="35" rows="5"></textarea>
+                </div>
+                <button>Send</button>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

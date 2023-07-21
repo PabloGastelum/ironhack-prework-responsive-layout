@@ -1,0 +1,92 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply some basic styling to the elements */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 120px;
+}
+
+/* Flexbox layout for the header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Flexbox layout for the navigation menu */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+nav a {
+    padding: 8px 12px;
+}
+
+/* Flexbox layout for main content and sidebar */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+main section {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+
+aside {
+    min-width: 200px;
+    padding: 10px;
+}
+
+/* Flexbox layout for the footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-top: auto;
+}
+
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        min-width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
